@@ -2,7 +2,7 @@ package com.company;
 import java.util.Scanner;
 class Library {
 
-    // Add Book
+    // Add Book To Libary
     public void addBook() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please type the Book name you want to add :");
