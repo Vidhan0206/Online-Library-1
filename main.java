@@ -66,3 +66,17 @@ public class tuts {
             lib.issueBook();
         }
 
+        else if (input == 3) {
+            lib.addBook();
+        }
+
+        else if (input == 4) {
+            lib.returnBook();
+        }
+
+        else {
+            System.out.println("Please Enter A valid input !!");
+        }
+    }
+}
+
