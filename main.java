@@ -36,7 +36,8 @@ class Library {
         }
         String avaliblemarvelbooks[] = {"Wanda Vision", "Empyre", "Thor: The Devourer King", "Guardians Reloaded",
                 "Immortal Hulk", "Avengers: The Final Host", "Black Panther", "Spider-Man: Back to Basics", "Miles " +
-                "Morales: Spider-Man ", "Who Is Iron Man?", "Doctor Strange", "Venom", "Star Wars", "Thanos"};
+                "Morales: Spider-Man ", "Who Is Iron Man?", "Doctor Strange", "Venom", "Star Wars", "Thanos", "X-Men: Days of Future Past",
+    "Captain Marvel: Higher, Further, Faster, More", "Deadpool: Secret Invasion", "Infinity Gauntlet", "Civil War", "House of M", "Daredevil: Born Again"};
         System.out.println(" ");
         System.out.println("Marvel Comic Books :");
         for (String element:avaliblemarvelbooks) {
