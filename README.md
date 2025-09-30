@@ -16,18 +16,6 @@
 - Java (Core Java)
 - Object-Oriented Programming (OOP)
 
-## 📂 Project Structure
-
-```
-
-Online-Library/
-├── src/
-│   ├── Library.java
-│   ├── Book.java
-│   └── Main.java
-└── README.md
-
-````
 
 > Your structure may vary — update the above based on your actual file structure.
 
@@ -36,7 +24,7 @@ Online-Library/
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/your-username/Online-Library.git
+git clone
 cd Online-Library
 ````
 
