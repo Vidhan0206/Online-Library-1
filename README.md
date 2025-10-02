@@ -1,85 +1,60 @@
-```markdown
 # 📚 Online-Library
 
-**Online-Library** is a simple Java program created as part of my learning journey in Java. It simulates the core features of a real-world library system and demonstrates object-oriented programming principles in action.
+**Online-Library** is a simple Java program that simulates basic library operations and demonstrates core Java and OOP concepts.
 
 ## 🚀 Features
 
 - Add new books to the library
-- Display available books
-- Borrow and return books
-- Track borrowed books
-- Basic command-line interface for interaction
+- Display available books and issued books
+- Borrow (issue) and return books
+- Basic command-line interface with input validation
 
 ## 🛠️ Technologies Used
 
 - Java (Core Java)
 - Object-Oriented Programming (OOP)
 
-
-> Your structure may vary — update the above based on your actual file structure.
-
 ## 🔧 How to Run
 
-1. Clone this repository:
+1. Ensure Java is installed:
 
 ```bash
-git clone
-cd Online-Library
-````
+java -version
+```
 
-2. Compile the Java files:
+2. Compile the program from the `Online-Library-1` directory:
 
 ```bash
-javac src/*.java
+javac main.java
 ```
 
-3. Run the program:
+3. Run the program (package `com.company`, class `tuts`):
 
 ```bash
-java src.Main
+java com.company.tuts
 ```
 
-> Make sure you have Java installed. You can check using `java -version`.
-
-## 📸 Example Usage
+## 📸 Example Menu
 
 ```
-Welcome to the Online Library!
-1. Add Book
-2. Show Available Books
-3. Borrow Book
-4. Return Book
-5. Exit
-
-Enter your choice:
+Welcome to this Library !!
+Please Enter 1 to Display the Available Books
+Please press 2 to Issue A Book
+Press 3 to Add A book
+Press 4 to return a Issued Book
+Press 5 to Exit
 ```
 
 ## 🎯 Purpose
 
-This project was created to:
-
-* Practice Java syntax and OOP concepts
-* Simulate a real-world application
-* Build a foundation for more complex Java projects
-
-## 🧠 Lessons Learned
-
-* Understanding class relationships (e.g., Library and Book)
-* Encapsulation and modular code design
-* Basic error handling in Java
-* Working with collections (e.g., ArrayList)
+- Practice Java syntax and OOP concepts
+- Simulate a small real-world application
+- Build a foundation for more complex Java projects
 
 ## 📃 License
 
-This project is open-source and free to use. Add a license if you need one (e.g., MIT, Apache).
+This project is open-source and free to use. Add a license as needed (e.g., MIT, Apache-2.0).
 
 ## 🙌 Acknowledgments
 
-This was a self-learning project. Thanks to various Java tutorials and documentation that helped me understand the basics!
-
----
-
-Feel free to reach out if you have suggestions or want to collaborate!
-
-```
+Thanks to various Java tutorials and documentation that helped shape this project.

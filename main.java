@@ -15,9 +15,8 @@ class Library {
 
     private final Map<String, String> issuedTo = new LinkedHashMap<>();
 
-    // Add Book To Libary
-    public void addBook() {
-        Scanner sc = new Scanner(System.in);
+    // Add Book To Library
+    public void addBook(Scanner sc) {
         System.out.println("Please type the Book name you want to add :");
         String addBookto = sc.nextLine().trim();
         while (addBookto.isEmpty()) addBookto = sc.nextLine().trim();
@@ -28,28 +27,26 @@ class Library {
                 System.out.println("That book already exists in the catalog.");
             } else {
                 availableBooks.add(addBookto);
-                System.out.println("Book Added 👍");
+                System.out.println("Book Added 👍  (" + addBookto + ") by " + addname);
             }
         }
     }
-    public void issueBook() {
-        Scanner sc = new Scanner(System.in);
+    public void issueBook(Scanner sc) {
         System.out.println("Please Enter the book name to be issued :");
         String issuebook = sc.nextLine().trim();
         while (issuebook.isEmpty()) issuebook = sc.nextLine().trim();
-        System.out.println("Please Enter the person name on whose name it should to be issued :");
+        System.out.println("Please enter the person's name to issue it to:");
         String issuername = sc.nextLine().trim();
         if (issuedTo.containsKey(issuebook)) {
             System.out.println("Sorry, this book is already issued to " + issuedTo.get(issuebook));
         } else if (availableBooks.remove(issuebook)) {
             issuedTo.put(issuebook, issuername);
-            System.out.println("Book Issued 👍");
+            System.out.println("Book Issued 👍  (" + issuebook + ") to " + issuername);
         } else {
             System.out.println("Book not found in available catalog.");
         }
     }
-    public void returnBook() {
-        Scanner sc = new Scanner(System.in);
+    public void returnBook(Scanner sc) {
         System.out.println("Enter the book name you want to return :");
         String retbook = sc.nextLine().trim();
         while (retbook.isEmpty()) retbook = sc.nextLine().trim();
@@ -58,12 +55,12 @@ class Library {
         if (issuedTo.containsKey(retbook)) {
             issuedTo.remove(retbook);
             availableBooks.add(retbook);
-            System.out.println("Book Returned 👍");
+            System.out.println("Book Returned 👍  (" + retbook + ") by " + retname);
         } else {
             System.out.println("This book is not recorded as issued.");
         }
     }
-    public void showAvailibleBooks() {
+    public void showAvailableBooks() {
         System.out.println("Available Books:");
         if (availableBooks.isEmpty()) {
             System.out.println("(none)");
@@ -87,7 +84,7 @@ public class tuts {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Library lib = new Library();
-        System.out.println("Welcome to this Libary !!");
+        System.out.println("Welcome to this Library !!");
         boolean running = true;
         while (running) {
             System.out.println("Please Enter 1 to Display the Available Books \n" +
@@ -104,19 +101,19 @@ public class tuts {
                 continue;
             }
             if (input == 1) {
-                lib.showAvailibleBooks();
+                lib.showAvailableBooks();
             }
 
             else if (input == 2) {
-                lib.issueBook();
+                lib.issueBook(sc);
             }
 
             else if (input == 3) {
-                lib.addBook();
+                lib.addBook(sc);
             }
 
             else if (input == 4) {
-                lib.returnBook();
+                lib.returnBook(sc);
             }
 
             else if (input == 5) {
