@@ -14,7 +14,7 @@ class Library {
     ));
 
     private final Map<String, String> issuedTo = new LinkedHashMap<>();
-
+    
     // Add Book To Library
     public void addBook(Scanner sc) {
         System.out.println("Please type the Book name you want to add :");
@@ -31,6 +31,7 @@ class Library {
             }
         }
     }
+
     public void issueBook(Scanner sc) {
         System.out.println("Please Enter the book name to be issued :");
         String issuebook = sc.nextLine().trim();
@@ -46,6 +47,7 @@ class Library {
             System.out.println("Book not found in available catalog.");
         }
     }
+
     public void returnBook(Scanner sc) {
         System.out.println("Enter the book name you want to return :");
         String retbook = sc.nextLine().trim();
@@ -60,6 +62,7 @@ class Library {
             System.out.println("This book is not recorded as issued.");
         }
     }
+
     public void showAvailableBooks() {
         System.out.println("Available Books:");
         if (availableBooks.isEmpty()) {
